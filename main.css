@@ -1,0 +1,123 @@
+body {
+	font-family: 'Arsenal', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	padding: 20px 50px 150px;
+	font-size: 14px;
+	text-align: left;
+	background-image: url(background.png);
+	background-repeat: repeat;
+	color: grey;
+  }
+
+#cover {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	top: 0px;
+	left: 0px;
+	background:rgba(251,251,251, 0.3);
+}
+
+#back {
+	margin: auto;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	position: absolute;
+	background:rgba(251,251,251);
+	padding: none;
+	width: 60%;
+	box-shadow:0px 0px 2px grey;
+	overflow-y: scroll;
+	overflow-x: hidden;
+ }
+
+#head {
+	position: fixed;
+	left: 20%;
+	right: 20%;
+	top:0px;
+	background: pink;
+	padding: 2px 50px 2px 50px;
+	table-layout: fixed;
+	display: inline;
+}
+
+#links {
+	background: red;
+	margin-left:50%;
+}
+
+#content {
+	background: green;
+	margin-top: 10%;
+	padding: 10px;
+	height: 100%;
+}
+
+h1 {
+	font-family: 'Copse', serif;
+	color: black;
+	margin: 10px;
+	position: absolute;
+}
+ 
+ul {
+	text-align: left;
+	display: inline;
+	padding: 8px;
+	list-style: none;
+}
+
+ul li {
+	display: inline-block;
+	position: relative;
+	padding: 15px 20px;
+	background: black;
+	cursor: pointer;
+	border: none;
+	text-align: right;
+	transition: all 0.3s cubic-bezier(.05,-0.48,.86,1.28);  
+}
+
+ul li:hover {
+	background: rgba(204, 204, 204, 0.5);
+	opacity: 0.5;
+	color: #fff;
+}
+
+ul li:hover ul{
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+
+img {
+	border: 10px solid white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: purple; 
+  border-radius:5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: grey; 
+}
+
+.line {
+	width: 100%;
+	margin: auto;
+	background: grey;
+	border: 0.5px solid rgba(200,200,200);
+}
