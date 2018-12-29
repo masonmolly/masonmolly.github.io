@@ -2,6 +2,7 @@ var mains;
 var settings;
 var notes;
 var pen;
+var plus;
 var bg;
 var soundPlaying;
 var Y_AXIS = 1;
@@ -15,6 +16,7 @@ function preload() {
   notes = loadImage("notes.png")
   pen = loadImage("pen.png")
   bg = loadImage("background.jpg")
+  plus = loadImage("plus.png")
 }
 
 function setGradient(x, y, w, h, c1, c2, axis) {
@@ -92,6 +94,7 @@ function draw() {
   image(mains, 100, 100);
   setGradient(129,207,635,300, c1, c2, X_AXIS)
   image(pen, 795,240)
+  image(plus,141,219);
   
   var dc = dist(mouseX, mouseY, 165,155);
   var dp = dist(mouseX, mouseY, 155,230);
