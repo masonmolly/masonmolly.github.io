@@ -3,7 +3,7 @@ body {
 	padding: 20px 50px 150px;
 	font-size: 14px;
 	text-align: left;
-	background-image: url(background.png);
+	background-image: url(images/background.png);
 	background-repeat: repeat;
 	background-attachment: fixed;
 	color: grey;
