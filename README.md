@@ -1,2 +1,2 @@
 # masonmolly.github.io
-Personal website
+All files relating to my personal website, mollymason.me.
