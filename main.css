@@ -8,7 +8,7 @@ body {
 	font-size: 14px;
 	text-align: left;
 	background: #302E2B;
-	color: grey;
+	color: grey;	
 }
 
 #back {
@@ -17,11 +17,11 @@ body {
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-	position: absolute;
-	background: rgba(251,251,251);
+	position: absolute;	
 	padding: none;
+	background: rgba(251,251,251);
 	width: 70%;
-	box-shadow: 0px 0px 2px grey;
+	box-shadow: 0px 0px 2px grey;	
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
@@ -40,19 +40,17 @@ HEADER
 	position: fixed;
 	left: 15%;
 	right: 15%;
-	top:0px;
+	width: auto;
+	top: 0px;
 	background: #202021;
 	padding: 15px 50px 15px 50px;
-	table-layout: fixed;
-	display: inline-block;
+	display: flex;
 	z-index: 99999;
 	color: white;
 }
 
 #links {
-	margin-left:35%;
-	margin-top: 0%;
-	display: inline-block;
+	right: 10%;
 	position: absolute;
 }
 
