@@ -19,8 +19,8 @@ body {
 	right: 0px;
 	position: absolute;	
 	padding: none;
-	background: rgba(251,251,251);
 	width: 70%;
+	background: rgba(251,251,251);
 	box-shadow: 0px 0px 2px grey;	
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -38,12 +38,13 @@ HEADER
 
 #head {
 	position: fixed;
+	height: 70px;
 	left: 15%;
 	right: 15%;
 	width: auto;
 	top: 0px;
 	background: #202021;
-	padding: 15px 50px 15px 50px;
+	padding: 5px 50px 5px 50px;
 	display: flex;
 	z-index: 99999;
 	color: white;
@@ -51,27 +52,69 @@ HEADER
 
 #links {
 	right: 10%;
+	padding: 20px 0px 20px 0px;
 	position: absolute;
 }
 
-ul a {
+.link {
 	color: #f7f2f2;
-}
-
-ul {
-	text-align: left;
-	padding: 8px;
-	list-style: none;
-	display: inline-block;
 	position: relative;
-	padding: 15px 20px;
-	text-align: right;
-	transition: all 0.3s cubic-bezier(.05,-0.48,.86,1.28);  
+	padding: 5px 20px 5px 20px;
+	display: inline-block;	
+	transition: 0.2s ease-in-out;
 }
 
-ul li a:hover {
-	opacity: 0.5;
-	text-shadow: 0 0 3px white;
+.link:not(.active):hover {
+	text-shadow: 0 0 3px black;
+	-webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.active {
+	font-weight: bold;
+	font-style: italic;
+	color: #9772a5;
+}
+
+#hamiconcontainer {
+	display: none;
+	height: 100%;
+	padding: 0px 30px 0px 30px;
+	top: 0;
+	right: 0;
+	position: absolute;
+}
+
+#hamiconcontainer2 {
+	position: relative;
+	top: 25%;
+}
+
+.hamicon {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  border-radius: 15px;
+}
+
+#hamlinks {
+	background: green;
+	position: absolute;
+	display: none;
+	top: 80px;
+	left: 0;
+	width: 100%;
+	margin: auto;
+}
+
+#hamlinks a:hover {
+	background:blue;
+}
+
+#hamlinks a {
+	display: block;
 }
 
 /**
@@ -138,9 +181,9 @@ GENERAL
 }
 
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 /**
@@ -235,3 +278,34 @@ SCROLLBAR
   background: #5b5a5a; 
 }
 
+/**
+MEDIA QUERIES 
+**/
+
+@media screen and (max-width: 1000px) {
+	#back {
+		width: 100%;
+	}
+	#head {
+		left: 0%;
+		right: 0%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#head {
+		padding: 5px 10px 5px 10px;
+	}
+	#links {
+		display: none;
+	}
+	#hamiconcontainer {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 701px) {
+	#hamlinkscontainer {
+		display: none;
+	}	
+}
