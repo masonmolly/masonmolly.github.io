@@ -4,22 +4,21 @@ MAIN
 
 body {
 	font-family: 'Arsenal', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	padding: 20px 50px 150px;
 	font-size: 14px;
+	color: grey;
 	text-align: left;
-	background: #302E2B;
-	color: grey;	
+	background: #302e2b;
+	padding: 20px 50px 150px;	
 }
 
 #back {
-	margin: auto;
 	top: 0px;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-	position: absolute;	
-	padding: none;
 	width: 70%;
+	position: absolute;	
+	margin: auto;
 	background: rgb(251,251,251);
 	box-shadow: 0px 0px 2px grey;	
 	overflow-y: scroll;
@@ -27,27 +26,25 @@ body {
 }
 
 #content {
-	margin-top: 7%;
-	padding: 10px;
 	height: auto;
+	margin-top: 90px;
+	padding: 10px;
 }
 
 /** 
 HEADER
 **/
 
-#head {
-	position: fixed;
+#head {	
 	height: 70px;
 	left: 15%;
 	right: 15%;
 	width: auto;
-	top: 0px;
+	position: fixed;
+	display: flex;
 	background: #202021;
 	padding: 5px 70px 5px 70px;
-	display: flex;
 	z-index: 99999;
-	color: white;
 }
 
 #links {
@@ -58,63 +55,78 @@ HEADER
 
 .link {
 	color: #f7f2f2;
+	font-size: 15px;
+	font-family: 'Thasadith', sans-serif;
+	font-weight: bold;
 	position: relative;
-	padding: 5px 20px 5px 20px;
-	display: inline-block;	
+	display: inline-block;
+	padding: 5px 20px 5px 20px;	
 	transition: 0.2s ease-in-out;
 }
 
 .link:not(.active):hover {
-	text-shadow: 0 0 3px black;
 	-webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 
 .active {
-	font-weight: bold;
-	font-style: italic;
-	color: #9772a5;
+	color: #caafcf;
 }
 
-#hamiconcontainer {
-	display: none;
+#mobile-icon-block {
 	height: 100%;
-	padding: 0px 30px 0px 30px;
-	top: 0;
-	right: 0;
-	position: absolute;
-}
-
-#hamiconcontainer2 {
-	position: relative;
-	top: 25%;
-}
-
-.hamicon {
-  width: 35px;
-  height: 5px;
-  background-color: white;
-  margin: 6px 0;
-  border-radius: 15px;
-}
-
-#hamlinks {
-	background: green;
-	position: absolute;
+	top: 0px;
+	right: 0px;
 	display: none;
-	top: 80px;
-	left: 0;
+	position: absolute;
+	padding: 0px 30px 0px 30px;	
+}
+
+#mobile-icon-block:hover {
+	background: #333;
+}
+
+.mobile-icon {
+	width: 35px;
+	height: 4px;
+	top: 25%;
+	position: relative;
+	margin: 6px 0px;
+	background: white;
+	border-radius: 15px;
+}
+
+#mobile-links {
 	width: 100%;
+	top: 80px;
+	right: 0px;
+	display: none;
+	margin-left: 10px;
+	position: absolute;
 	margin: auto;
+	background: #333;
 }
 
-#hamlinks a:hover {
-	background:blue;
-}
-
-#hamlinks a {
+.mobile-link {
+	width: 100%;
+	font-family: 'Thasadith', sans-serif;
+	font-size: 20px;
+	color: white;
 	display: block;
+	padding: 15px 20px 15px 20px;
+}
+
+.mobile-link:hover {
+	font-weight: bold;
+	color: black;
+	background: #ddd;
+}
+
+.mobile-link-active {
+	font-weight: bold;
+	color: black;
+	background: #ddd;
 }
 
 /**
@@ -298,7 +310,7 @@ MEDIA QUERIES
 	#links {
 		display: none;
 	}
-	#hamiconcontainer {
+	#mobile-icon-block {
 		display: block;
 	}
 }
@@ -310,16 +322,16 @@ MEDIA QUERIES
 	#head {
 		padding: 4px 15px 4px 15px;
 	}
-	#hamiconcontainer {
+	#mobile-icon-block {
 		padding: 0px 15px 0px 15px;
 	}
-	#hamlinks {
+	#mobile-links {
 		top: 78px;
 	}
 }
 
 @media screen and (min-width: 701px) {
-	#hamlinkscontainer {
+	#mobile-links-container {
 		display: none;
 	}	
 }

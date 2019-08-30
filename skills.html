@@ -13,15 +13,32 @@
 <body>
 <div id="back">
 	<div id="head">
-		<h1>MOLLY MASON</h1>
+		<h1><a href="index" style="color:white;">MOLLY MASON</a></h1>
 		<div id="links">
-			<ul> <li> <a href="index"> ABOUT </a> </li> </ul> |
-			<ul> <li> <i><b style="color:#9772a5;">SKILLS</b></i> </li> </ul> |
-			<ul> <li> <a href="projects"> PROJECTS </a> </li> </ul> |
-			<ul> <li> <a href="cv.pdf"> CV </a> </li> </ul>
+			<div id="links-container">
+				<a href="index" class="link"> ABOUT </a> |
+				<a href="skills" class="link active"> SKILLS </a>  |
+				<a href="projects" class="link"> PROJECTS </a>  |
+				<a href="cv.pdf" class="link"> CV </a> 
+			</div>
+		</div>
+		<a href="javascript:void(0);" onclick="mobileLinks()">
+			<div id="mobile-icon-block"> 
+				<div class="mobile-icon"></div>
+				<div class="mobile-icon"></div>
+				<div class="mobile-icon"></div>
+			</div>
+		</a>
+		<script src="mobile.js"></script>
+		<div id="mobile-links">
+			<div id="mobile-links-container">
+				<a href="index" class="mobile-link"> About </a>
+				<a href="skills" class="mobile-link mobile-link-active"> Skills </a>
+				<a href="projects"class="mobile-link"> Projects </a>
+				<a href="cv.pdf" class="mobile-link"> CV </a>
+			</div>
 		</div>
 	</div>
-<br>
 
 <div id="content">
 <center>

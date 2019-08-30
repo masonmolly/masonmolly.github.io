@@ -1,10 +1,11 @@
 /* Script from w3schools */
 
-function myFunction() {
-  var x = document.getElementById("hamlinks");
+function mobileLinks() {
+  var x = document.getElementById("mobile-links");
   if (x.style.display === "block") {
     x.style.display = "none";
-  } else {
+  } 
+  else {
     x.style.display = "block";
   }
 }
