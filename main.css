@@ -44,7 +44,7 @@ HEADER
 	width: auto;
 	top: 0px;
 	background: #202021;
-	padding: 5px 50px 5px 50px;
+	padding: 5px 70px 5px 70px;
 	display: flex;
 	z-index: 99999;
 	color: white;
@@ -235,13 +235,12 @@ HEADERS
 h1 {
 	position: relative;
 	display: inline-block;
-	margin-left: 3%;
 	letter-spacing: 2px;
 }
 
 h2 {
-	font-family:'Thasadith', sans-serif;
-	color:#626970;
+	font-family: 'Thasadith', sans-serif;
+	color: #626970;
 }
 
 
@@ -294,13 +293,19 @@ MEDIA QUERIES
 
 @media screen and (max-width: 700px) {
 	#head {
-		padding: 5px 10px 5px 10px;
+		padding: 5px 30px 5px 30px;
 	}
 	#links {
 		display: none;
 	}
 	#hamiconcontainer {
 		display: block;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	h1 {
+		font-size: 25px;
 	}
 }
 
