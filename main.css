@@ -313,6 +313,9 @@ MEDIA QUERIES
 	#hamiconcontainer {
 		padding: 0px 15px 0px 15px;
 	}
+	#hamlinks {
+		top: 78px;
+	}
 }
 
 @media screen and (min-width: 701px) {
