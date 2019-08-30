@@ -307,6 +307,12 @@ MEDIA QUERIES
 	h1 {
 		font-size: 25px;
 	}
+	#head {
+		padding: 4px 15px 4px 15px;
+	}
+	#hamiconcontainer {
+		padding: 0px 15px 0px 15px;
+	}
 }
 
 @media screen and (min-width: 701px) {
