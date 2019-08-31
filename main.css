@@ -225,27 +225,28 @@ COLUMNS
 **/
 
 .column-1-project { /* for use on individual project pages */
-	float: left;
 	width: 45%;
+	float: left;
 	text-align: justify;
 	padding: 20px 20px 0px 27%;
 }
 
 .column-2 {
-	float: left;
 	width: 45%;
+	float: left;
 }
 
 .column-2-project { 
-	float: left;
 	width: 45%;
+	float: left;
 	text-align: justify;
-	padding: 20px 20px 0px 20px;
+	margin-left: 1%;
+	padding: 20px 10px 0px 10px;
 }
 
 .column-3 { 
-	float: left;
 	width: 33%;
+	float: left;
 }
 
 .column-borders {
@@ -328,6 +329,9 @@ MEDIA QUERIES
 	}
 	
 	/**SKILLS**/
+	#skills {
+		margin-right: 4%;
+	}
 	.skill-img {
 		width: 7%;
 		height: 7%;
@@ -345,6 +349,15 @@ MEDIA QUERIES
 		width: 80%;
 		margin-left: 10%;
 		text-align: center;
+	}
+	#project {
+		width: 100%;
+		margin-left: 0px;
+	}
+	.column-2-project {
+		width: 80%;
+		margin-left: 7%;
+		padding: 10px 20px 0px 20px;
 	}
 }
 
