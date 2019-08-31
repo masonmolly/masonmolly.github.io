@@ -119,7 +119,6 @@ MEDIA QUERIES
 	}
 	.slideshow-images {
 		height: 125px;
-		background: purple;
 	}
 	.slideshow-images:hover .slideshow-caption {
 		opacity: 0;
