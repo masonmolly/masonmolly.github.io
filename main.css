@@ -148,6 +148,7 @@ PAGE SPECIFIC
 	float: right;
 	position: relative;
 	margin-right: 8%;
+	margin-top: 2%;
 }
 
 #contact {
@@ -315,6 +316,10 @@ MEDIA QUERIES
 		left: 0%;
 		right: 0%;
 	}
+	
+	#me {
+		margin-top: 3%;
+	}
 }
 
 @media screen and (max-width: 700px) {
@@ -326,6 +331,10 @@ MEDIA QUERIES
 	}
 	#mobile-icon-block {
 		display: block;
+	}
+	
+	#me {
+		margin-top: 10%;
 	}
 	
 	/**SKILLS**/
@@ -393,6 +402,7 @@ MEDIA QUERIES
 		float: left;
 		margin-left: 30%;
 		margin-right: none;	
+		margin-top: 3%;
 	}
 	#contact {
 		display: block;
