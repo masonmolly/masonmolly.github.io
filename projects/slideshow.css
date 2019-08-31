@@ -82,7 +82,7 @@
 MEDIA QUERIES 
 **/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) { /** TABLETS ETC. **/
 	.slideshow {
 		width: 450px;
 	}
@@ -113,21 +113,24 @@ MEDIA QUERIES
 	}
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 550px) { /** PHONES **/
 	.slideshow {
-		width: 350px;
+		width: 295px;
 	}
 	.slideshow-images {
 		height: 125px;
+		background: purple;
 	}
 	.slideshow-images:hover .slideshow-caption {
 		opacity: 0;
 	}
 	.slideshow-left {
 		height: 130px;
+		width: 38px;
 	}
 	.slideshow-right {
 		height: 130px;
+		width: 38px;
 	}
 	.slideshow-button {
 		padding: 10px 15px;

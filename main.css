@@ -308,7 +308,7 @@ SCROLLBAR
 MEDIA QUERIES 
 **/
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) { /** SMALLER MONITORS **/
 	#back {
 		width: 100%;
 	}
@@ -322,7 +322,7 @@ MEDIA QUERIES
 	}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) { /** TABLETS ETC. **/
 	#head {
 		padding: 5px 30px 5px 30px;
 	}
@@ -370,7 +370,7 @@ MEDIA QUERIES
 	}
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 550px) { /** PHONES **/
 	#content {
 		margin-top: 70px;
 	}
@@ -411,6 +411,17 @@ MEDIA QUERIES
 		text-align: left;
 		margin-left: 30%;	
 	}
+	
+	/** PROJECTS **/
+	.column-1-project { 
+		width: 80%;
+		padding: 20px 20px 0px 10%;
+	}
+	.column-2-project {
+		width: 90%;
+		margin-left: 1%;
+	}
+	
 }
 
 @media screen and (min-width: 701px) {
