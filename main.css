@@ -380,6 +380,10 @@ MEDIA QUERIES
 		font-size: 25px;
 	}
 	
+	.mobile-hide {
+		display: none;
+	}
+	
 	/** INDEX **/
 	#about {
 		width: 88%;
